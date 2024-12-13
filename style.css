@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*-------------
+    COMMON
+--------------*/
+
+
+.container {
+    max-width: 78.125rem;
+    margin: 0 auto;
+}
+
+.img-fluid {
+    max-width: 100%;
+    
+}
+
+img {
+    max-width: 100%;
+    height: 6.9rem;
+    display: block;
+}
+
+.col {
+    width: calc(100% / 3);
+    display: flex;
+    background-color: black;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+a {
+    text-decoration: none;
+    color: #6ECBF2;
+}
+
+
+/*-------------
+    HEADER
+--------------*/
+header {
+    text-align: center;
+    margin-top: 1.875rem;
+    margin-bottom: 3.75rem;
+}
+
+header h1 {
+    font-size: 3.75rem;
+    color: #E53170;
+    margin-bottom: 3.125rem
+}
+
+header p {
+    font-size: 1.5625rem;
+}
+
+/*--------------
+    CARD
+---------------*/
+
+.details h3 {
+    color: white;
+    padding-bottom: .625rem;
+}
+
+.details p{
+    color: white;
+    padding-bottom: .625rem;
+}
+
+.details {
+    padding: .9375rem;
+    
+}
+
+.members {
+    display: flex;
+    background-color: black;
+}
