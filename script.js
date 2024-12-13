@@ -1,3 +1,34 @@
+// FUNCTIONS
+
+function createCardMember(member) {
+    const {name, role, email, img} = member;
+
+
+const card = `
+    <div class="col">
+        <div class="img-card img-fluid">
+            <img src="${img}" alt="${name}">
+        </div>
+        <div class="details">
+            <h3>${name}</h3>
+            <p>${role}</p>
+            <a href=${email}</a>
+        </div>
+    </div>
+            `;
+    return card;
+}
+
+function renderTeam(){
+    let listItems="";
+    for(let i = 0; i < teamMembers.length; i++) {
+        listItems += createCardMember(teamMembers[i])
+    }
+teamContainer.innerHTML = listItems;
+
+}
+
+
 const teamMembers = [
     {
       name: "Marco Bianchi",
@@ -36,3 +67,13 @@ const teamMembers = [
       img: "img/female3.png"
     }
   ];
+
+// DOM ELEMENT
+
+const teamContainer = document.querySelector(".row");
+const nameElm = document.getElementById(".name");
+const roleElm = document.getElementById(".role");
+const imgElm = document.getElementById(".img");
+const emailElm = document.getElementById(".email");
+
+renderTeam();

@@ -25,17 +25,19 @@ img {
     display: block;
 }
 
-.col {
-    width: calc(100% / 3);
-    display: flex;
-    background-color: black;
-}
-
 .row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;   
+    row-gap: 1.25rem;
+    justify-content: space-between;
 }
 
+.col {
+    width: calc(80% / 3);
+    display: flex;
+    background-color: black;
+    
+}
 
 a {
     text-decoration: none;
