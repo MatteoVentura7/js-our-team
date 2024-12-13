@@ -114,3 +114,13 @@ header p {
     padding-bottom: .625rem;
 }
 
+
+/* DA 768px A 0 */
+@media screen and (max-width: 768px) {
+   
+    .col {
+        width: calc(95% / 2);
+    }
+
+}
+
