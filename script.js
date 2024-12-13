@@ -12,7 +12,7 @@ const card = `
         <div class="details">
             <h3>${name}</h3>
             <p>${role}</p>
-            <a href=${email}</a>
+            <a>${email}</a>
         </div>
     </div>
             `;
@@ -71,9 +71,31 @@ const teamMembers = [
 // DOM ELEMENT
 
 const teamContainer = document.querySelector(".row");
-const nameElm = document.getElementById(".name");
-const roleElm = document.getElementById(".role");
-const imgElm = document.getElementById(".img");
-const emailElm = document.getElementById(".email");
+const nameElm = document.getElementById("name");
+const roleElm = document.getElementById("role");
+const imgElm = document.getElementById("img");
+const emailElm = document.getElementById("email");
+const memberFormElm = document.getElementById("form-add");
 
 renderTeam();
+
+// SUBMIT DEL FORM
+
+    memberFormElm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = nameElm.value;
+    const role = roleElm.value;
+    const img = imgElm.value;
+    const email = emailElm.value;
+
+    const newMember = {
+        name,
+        role,
+        img,
+        email
+    };
+
+    teamMembers.push(newMember);
+    renderTeam();
+})

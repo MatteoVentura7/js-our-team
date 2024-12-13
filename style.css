@@ -33,7 +33,7 @@ img {
 }
 
 .col {
-    width: calc(80% / 3);
+    width: calc(95% / 3);
     display: flex;
     background-color: black;
     
@@ -87,3 +87,30 @@ header p {
     display: flex;
     background-color: black;
 }
+
+/*--------------
+    FORM
+---------------*/
+
+.form {
+    padding-top: 2.5rem;
+    text-align: center;
+}
+
+.ruolo-in {
+    padding-bottom: .625rem;
+}
+
+.name-in {
+    padding-bottom: .625rem;
+    padding-top: 1.25rem;
+}
+
+.foto-in {
+    padding-bottom: .625rem;
+}
+
+.email-in {
+    padding-bottom: .625rem;
+}
+
