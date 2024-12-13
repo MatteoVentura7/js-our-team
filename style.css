@@ -8,6 +8,9 @@
     COMMON
 --------------*/
 
+body {
+    font-family: "Fredoka", sans-serif;
+}
 
 .container {
     max-width: 78.125rem;
@@ -98,22 +101,41 @@ header p {
 }
 
 .ruolo-in {
-    padding-bottom: .625rem;
+    padding-bottom: .9375rem;
 }
 
 .name-in {
-    padding-bottom: .625rem;
+    padding-bottom: .9375rem;
     padding-top: 1.25rem;
 }
 
 .foto-in {
-    padding-bottom: .625rem;
+    padding-bottom: .9375rem;
 }
 
 .email-in {
-    padding-bottom: .625rem;
+    padding-bottom: .9375rem;
 }
 
+button {
+    padding: .625rem;
+    cursor: pointer;
+    background-color: #0D6EFD;
+    color: white;
+    border-radius: .3125rem;
+    border: none;
+    width: 5rem;
+    
+}
+
+input {
+    font-size: large;
+}
+
+h2 {
+    padding-top: 1.875rem;
+    font-size: 1.875rem;
+}
 
 /* DA 768px A 0 */
 @media screen and (max-width: 768px) {
